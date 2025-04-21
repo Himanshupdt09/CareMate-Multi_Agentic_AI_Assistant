@@ -42,21 +42,29 @@ Please choose a time slot.
 
 🤖 AI: ✅ Appointment scheduled with John Doe at 08:00 AM tomorrow. Appointment ID: #APT12456
 
-🧰 Tech Stack
-Component | Description
-LangGraph | Multi-agent coordination and flow management
-Groq + Gemma-2B-IT | Lightning-fast LLM inference for conversation
-LangChain | Prompt templating and tool invocation
-Pandas | CSV parsing, scheduling, and data filtering
-Jupyter Notebook | Development and interaction via notebook
 
-🧠 Agent Workflow
+## 🧰 Tech Stack
+
+| Component             | Description                                               |
+|-----------------------|-----------------------------------------------------------|
+| **LangGraph**          | Multi-agent coordination and flow management              |
+| **Groq + Gemma-2B-IT** | Lightning-fast LLM inference for conversation             |
+| **LangChain**          | Prompt templating and tool invocation                     |
+| **Pandas**             | CSV parsing, scheduling, and data filtering               |
+| **Jupyter Notebook**   | Development and interaction via notebook                  |
+
+---
+
+## 🧠 Agent Workflow
+
+```mermaid
 graph TD
     A[User Query] --> B[Supervisor Agent]
     B --> C[Info Agent]
     B --> D[Booking Agent]
     C --> E[Doctor Info / FAQ Answers]
     D --> F[Slot Matching, Scheduling, CSV Update]
+
 🎯 Supervisor Agent – Routes user query to appropriate agent
 
 🧾 Info Agent – Handles doctor availability and hospital FAQs
@@ -78,7 +86,7 @@ caremate-ai/
 
 💬 Text Query Examples
 
-🟢 "What can you do?"
+ 🟢 "What can you do?"
 🟢 "Tell me all general dentists available tomorrow."
 🟢 "Schedule an appointment with John Doe."
 🟢 "Cancel my appointment with Elis Johnson at 11 AM."

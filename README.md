@@ -2,7 +2,7 @@
 
 CareMate AI is an intelligent conversational assistant built for hospitals, powered by **LangGraph**, **Groq's blazing-fast inference**, and **Gemma-2B-IT**. It enables users to query doctor availability, ask hospital-related FAQs, and book/cancel/reschedule appointments — all through a multi-agent reasoning workflow.
 
-> Uses a CSV of 4000+ doctor records and simulates a real appointment system with slot booking and natural language interaction.Retains full chat history to ensure a properly contextual, conversational experience.
+> Uses a CSV of 4000+ doctor records and simulates a real appointment system with slot booking and natural language interaction. Retains full chat history to ensure a properly contextual, conversational experience.
 
 ---
 

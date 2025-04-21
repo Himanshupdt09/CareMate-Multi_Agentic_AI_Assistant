@@ -41,7 +41,7 @@ Please choose a time slot.
 🧍 User: I want to schedule at 8 am.
 
 🤖 AI: ✅ Appointment scheduled with John Doe at 08:00 AM tomorrow. Appointment ID: #APT12456
-
+```
 
 ## 🧰 Tech Stack
 

@@ -60,12 +60,15 @@ Please choose a time slot.
 ## 🧠 Agent Workflow
 
 ```mermaid
-graph TD
-    A[User Query] --> B[Supervisor Agent]
-    B --> C[Info Agent]
-    B --> D[Booking Agent]
-    C --> E[Doctor Info / FAQ Answers]
-    D --> F[Slot Matching, Scheduling, CSV Update]
+flowchart TD
+    __start__([__start__]) --> supervisor
+    supervisor --> information_node
+    supervisor --> booking_node
+    information_node --> supervisor
+    booking_node --> supervisor
+    supervisor --> __end__([__end__])
+
+
 ```
 
 - 🎯 **Supervisor Agent** – Routes user query to appropriate agent  
@@ -95,7 +98,7 @@ caremate-ai/
 
 ```bash
 # Clone the repo and move into the project folder
-git clone https://github.com/Himanshupdt09/CareMate-Multi_Agentic_AI_Assistant.git
+git clone https://github.com/Himanshupdt09/MediBotX.git
 cd caremate-ai
 
 # Create and activate virtual environment

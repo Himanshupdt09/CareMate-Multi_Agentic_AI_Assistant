@@ -98,7 +98,7 @@ caremate-ai/
 
 ```bash
 # Clone the repo and move into the project folder
-git clone https://github.com/Himanshupdt09/MediBotX.git
+git clone https://github.com/Himanshupdt09/CareMate-Multi_Agentic_AI_Assistan.git
 cd caremate-ai
 
 # Create and activate virtual environment

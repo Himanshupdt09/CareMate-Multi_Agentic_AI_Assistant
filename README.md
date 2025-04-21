@@ -19,12 +19,12 @@ CareMate AI is an intelligent conversational assistant built for hospitals, powe
 
 ## 🧪 Sample Interaction
 
-\`\`\`plaintext
+```plaintext
 🧍 User: What can you do?
 
 🤖 AI: Hello! I can help you with doctor availability, hospital info, scheduling, canceling, or rescheduling appointments.
 
-🧍 User: Tell me general dentists of this hospital available on tomorrow.
+🧍 User: Tell me general dentists of this hospital available tomorrow.
 
 🤖 AI: Found 2 general dentists available tomorrow:
 - John Doe
@@ -41,42 +41,30 @@ Please choose a time slot.
 🧍 User: I want to schedule at 8 am.
 
 🤖 AI: ✅ Appointment scheduled with John Doe at 08:00 AM tomorrow. Appointment ID: #APT12456
-\`\`\`
 
----
+🧰 Tech Stack
+Component | Description
+LangGraph | Multi-agent coordination and flow management
+Groq + Gemma-2B-IT | Lightning-fast LLM inference for conversation
+LangChain | Prompt templating and tool invocation
+Pandas | CSV parsing, scheduling, and data filtering
+Jupyter Notebook | Development and interaction via notebook
 
-## 🧰 Tech Stack
-
-| Component             | Description                                               |
-|-----------------------|-----------------------------------------------------------|
-| **LangGraph**         | Multi-agent coordination and flow management              |
-| **Groq + Gemma-2B-IT**| Lightning-fast LLM inference for conversation             |
-| **LangChain**         | Prompt templating and tool invocation                     |
-| **Pandas**            | CSV parsing, scheduling, and data filtering               |
-| **Jupyter Notebook**  | Development and interaction via notebook                  |
-
----
-
-## 🧠 Agent Workflow
-
-\`\`\`mermaid
+🧠 Agent Workflow
 graph TD
     A[User Query] --> B[Supervisor Agent]
     B --> C[Info Agent]
     B --> D[Booking Agent]
     C --> E[Doctor Info / FAQ Answers]
     D --> F[Slot Matching, Scheduling, CSV Update]
-\`\`\`
+🎯 Supervisor Agent – Routes user query to appropriate agent
 
-- 🎯 **Supervisor Agent** – Routes user query to appropriate agent  
-- 🧾 **Info Agent** – Handles doctor availability and hospital FAQs  
-- 🗓️ **Booking Agent** – Manages schedule, cancel, and reschedule flows  
+🧾 Info Agent – Handles doctor availability and hospital FAQs
 
----
+🗓️ Booking Agent – Manages schedule, cancel, and reschedule flows
 
-## 📁 Project Structure
+📁 Project Structure
 
-```plaintext
 caremate-ai/
 ├── requirements.txt                 # All dependencies
 │
@@ -88,63 +76,22 @@ caremate-ai/
 │
 └── README.md                        # Project documentation
 
+💬 Text Query Examples
 
----
-
-## ⚙️ Getting Started
-
-### 1. Clone the Repository
-
-\`\`\`bash
-git clone https://github.com/yourusername/caremate-ai.git
-cd caremate-ai
-\`\`\`
-
-### 2. Install Dependencies
-
-\`\`\`bash
-pip install -r requirements.txt
-\`\`\`
-
-### 3. Run the System
-
-Open the notebook in Jupyter:
-
-\`\`\`bash
-jupyter notebook notebooks/multiagent_system.ipynb
-\`\`\`
-
-Start the chat and interact with the AI.
-
----
-
-## 💬 Text Query Examples
-
-\`\`\`plaintext
 🟢 "What can you do?"
 🟢 "Tell me all general dentists available tomorrow."
 🟢 "Schedule an appointment with John Doe."
 🟢 "Cancel my appointment with Elis Johnson at 11 AM."
 🟢 "Reschedule my appointment from 9 AM to 2 PM."
 🟢 "What are your working hours?"
-\`\`\`
 
----
+🔮 Future Improvements
+🌐 Streamlit / Flask frontend for web-based access
 
-## 🔮 Future Improvements
+🩺 Admin-side dashboard to manage appointments and schedules
 
-- 🌐 Streamlit / Flask frontend for web-based access  
-- 🩺 Admin-side dashboard to manage appointments and schedules  
-- 🔔 Email / SMS notifications for appointments  
-- 🧠 Chat history, patient profiles, and login support  
-- 📅 Real-time slot conflict handling using a database  
+🔔 Email / SMS notifications for appointments
 
----
+🧠 Chat history, patient profiles, and login support
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute it with proper attribution.
-
----
-
-## 🧬 Built to revolutionize hospital workflows — one appointment at a time.
+📅 Real-time slot conflict handling using a database

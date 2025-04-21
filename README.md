@@ -76,7 +76,7 @@ graph TD
 
 ## 📁 Project Structure
 
-\`\`\`plaintext
+```plaintext
 caremate-ai/
 ├── requirements.txt                 # All dependencies
 │
@@ -87,7 +87,7 @@ caremate-ai/
 │   └── multiagent_system.ipynb      # Main notebook with multi-agent pipeline
 │
 └── README.md                        # Project documentation
-\`\`\`
+
 
 ---
 
